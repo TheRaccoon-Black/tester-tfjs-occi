@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Classification</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> <!-- TensorFlow.js CDN -->
+    <script src="index.js" defer></script> <!-- Your JavaScript file -->
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h2>Image Classification</h2>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="image-upload">Upload an Image</label>
+                <input type="file" class="form-control-file" id="image-upload" accept="image/*">
+            </div>
+            <button id="classify-button" class="btn btn-primary">Classify Image</button>
+            <div class="mt-4">
+                <h4 id="result" class="text-success"></h4>
+                <div id="probabilities" class="mt-3"></div> <!-- Element to display class probabilities -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
